@@ -1,0 +1,148 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 540px;
+    text-align: center;
+}
+
+.home__img{
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.home__name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+
+.home__socials {
+    display: flex;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+.home__socials-link{
+    color: var(--title-color);
+    font-size: 1.3rem;   
+    transition: .3s;
+}
+
+.home__socials-link:hover{
+    color: hsl(43, 100%, 68%);
+}
+
+.scroll__down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+}
+
+.mouse{
+    border: 2px solid #454360;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: 0 auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse{
+    0% {
+        top: 29%;
+    }
+    15% {
+        top: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 29%;
+    }
+}
+
+.wheel{
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.22rem;
+    height: 0.3rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.shape{
+    position: absolute;
+}
+
+.s1{
+    left: 0%;
+    top: 20%;
+}
+
+.s2 {
+    left: 18%;
+    top: 8%;
+}
+
+.s3{
+    left: 4%;
+    top: 75%;
+    transform: rotate(300deg);
+    transform-origin: center center;
+}
+
+.s4 {
+    left: 15%;
+    top: 48%;
+}
+
+.s5{
+    left: 90%;
+    top: 30%;
+}
+
+.s6{
+    left: 60%;
+    top: 10%;
+}
+
+.s7{
+    left: 75%;
+    top: 60%;
+    transform: rotate(300deg);
+    transform-origin: center center;
+}
+
+.s8{
+    left: 86%;
+    top: 76%;
+    transform: rotate(300deg);
+    transform-origin: center center;
+}
