@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 const AboutBox = () => {
-    const accessToken = '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';
-    const username = 'jielim36'
+    const accessToken = process.env.REACT_APP_GITHUB_ACCESS_TOKEN;
+    const username = process.env.REACT_APP_GITHUB_USERNAME;
     const [numberRepo , setNumberRepo] = useState('-');
     const [commitsCount , setCommitsCount] = useState('-');
     const [followersCount , setFollowersCount] = useState('-');
@@ -29,29 +29,48 @@ const AboutBox = () => {
   };
   
   fetch(`https://api.github.com/users/${username}/repos`, { headers })
-    .then(response => response.json())
-    .then(repos => {
-      let commitCount = 0;
-      const fetchCommits = (repo) => {
-        return fetch(`https://api.github.com/repos/${username}/${repo.name}/commits`, { headers })
-          .then(response => response.json())
-          .then(commits => {
-            commitCount += commits.length;
-          });
-      };
-  
-      const fetchAllCommits = async () => {
-        for (const repo of repos) {
-          await fetchCommits(repo);
-        }
-        setCommitsCount(commitCount);
-      };
-  
-      fetchAllCommits();
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Failed to fetch repositories');
+    }
+  })
+  .then(repos => {
+    if (!Array.isArray(repos)) {
+      throw new Error('Repos is not an array');
+    }
+    let commitCount = 0;
+
+    const fetchCommits = (repo) => {
+      return fetch(`https://api.github.com/repos/${username}/${repo.name}/commits`, { headers })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Failed to fetch commits for repo ' + repo.name);
+          }
+        })
+        .then(commits => {
+          commitCount += commits.length;
+        });
+    };
+
+    const fetchAllCommits = async () => {
+      for (const repo of repos) {
+        await fetchCommits(repo);
+      }
+      setCommitsCount(commitCount);
+    };
+
+    fetchAllCommits();
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+// Rest of your code to fetch followers count
+
 
     //fetch github followers count
     fetch(`https://api.github.com/users/${username}`, { method: 'GET', headers })

@@ -1,0 +1,37 @@
+.skills__container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+  }
+  
+.skill__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    background-color: #fff;
+    padding: 20px 0;
+    transition: .3s;
+    box-sizing: border-box;
+  }
+
+  .axios{
+    padding: 5px 0;
+    transform: scale(1.5);
+  }
+
+  .jira{
+    padding: 10px 0;
+    transform: scale(1.5);
+  }
+  
+  .skill__icon {
+    width: 30%;
+    margin-bottom: 5px; /* 图标与标题之间的间距 */
+  }
+
+.skill__item:hover{
+  transform: scale(1.1);
+}

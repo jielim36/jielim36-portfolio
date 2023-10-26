@@ -1,4 +1,5 @@
 .resume__container{
+    position: relative;
     grid-template-columns: repeat(2,1fr);
     column-gap: 1.875rem;
 }
@@ -9,6 +10,7 @@
     border-radius: var(--border-radius);
     position: relative;
     box-shadow: var(--shadow);
+    height: fit-content;
 }
 
 .timeline__item{

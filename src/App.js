@@ -6,6 +6,7 @@ import Resume from './Component/Resume/Resume';
 import Sidebar from './Component/Sidebar/Sidebar';
 import Blog from './Component/Blog/Blog';
 import Contact from './Component/Contact/Contact';
+import Skills from './Component/Skills/Skills';
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <main className='main'>
         <Home />
         <About />
-        <Resume />
+        <Skills />
         <Portfolio />
-        <Blog />
-        <Contact />
+        <Resume />
+        {/* <Blog />
+        <Contact /> */}
       </main>
     </div>
   );

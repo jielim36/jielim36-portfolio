@@ -14,7 +14,7 @@ const About = () => {
             <p className="about__description">
               My name is Lim Yee Jie, I am a Software Engineer from Malaysia! I graduate in September 2024 have solid experience in back-end development, 
             </p>
-            <a href="" className="btn">Download Resume</a>
+            <a href="/static/LimYeeJie_Resume.pdf" download="LimYeeJie_Resume.pdf" className="btn">Download Resume</a>
           </div>
           <div className="about__skills grid">
             <div className="skills__data">

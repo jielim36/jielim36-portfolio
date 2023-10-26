@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css';
 import Menu from './Menu';
 
@@ -28,7 +28,7 @@ const Portfolio = () => {
           className={`work__item ${activeFilter === null ? 'active' : ''}`}
           onClick={() => filterItem(null)}
         >
-          Everythings
+          All
         </span>
         <span
           className={`work__item ${activeFilter === "Personal Project" ? 'active' : ''}`}
