@@ -44,10 +44,21 @@
     bottom: 1.5rem;
     left: 0;
     width: 100%;
+    text-align: center;
 }
 
 .home_scroll-name{
     font-size: var(--small-font-size);
+}
+
+@media screen and (max-width: 767px) {
+    html .scroll__down{
+        transform: translateY(-70px);
+    }
+    
+    html .intro{
+        transform: translateY(-70px);
+    }
 }
 
 .mouse{

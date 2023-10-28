@@ -24,6 +24,28 @@
         grid-template-columns: repeat(1,1fr);
         gap: 1.875rem;
     }
+
+    html .work__card{
+        max-height: 250px;
+        max-width: 500px;
+    }
+
+    html .work__img{
+        height: 250px;
+    }
+
+    html .work__description{
+        height: 40%;
+        top: 4.5rem;
+    }
+
+    html .work__title{
+        top: 2.2rem;
+    }
+
+    html .work__item{
+        white-space: nowrap;
+    }
 }
 
 

@@ -6,6 +6,17 @@
     html .timeline{
         margin-bottom: 1.5rem;
         max-width: 480px;
+        transform: scale(0.75);
+        transform-origin: top left;
+    }
+
+    html .githubState{
+        transform: scale(0.75);
+        transform-origin: top left;
+    }
+
+    html .resume{
+        padding-top: 10px;
     }
 }
 
