@@ -7,6 +7,8 @@ const AboutBox = () => {
     const [commitsCount , setCommitsCount] = useState('-');
     const [followersCount , setFollowersCount] = useState('-');
 
+    console.log(accessToken);
+    console.log(username);
 
     fetch(`https://api.github.com/users/${username}`, {
     headers: {
