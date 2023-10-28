@@ -64,7 +64,7 @@ const Menu = [
                 <ul>
                     <li>Having a server-side and a client-side, using Sockets for network connection and data exchange.</li>
                     <li>When multiple users request the server, the client establishes separate threads for each user to ensure connections.</li>
-                    <li>Trasmit files using streams approach</li>
+                    <li>Transmit files using streams approach</li>
                 </ul>
             </div>
         ),
