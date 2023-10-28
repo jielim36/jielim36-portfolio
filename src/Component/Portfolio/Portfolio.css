@@ -26,17 +26,18 @@
     }
 
     html .work__card{
-        max-height: 250px;
-        max-width: 500px;
+        max-height: 200px;
+        max-width: 373px;
     }
 
     html .work__img{
-        height: 250px;
+        height: 190px;
+        max-width: 373px;
     }
 
     html .work__description{
-        height: 40%;
-        top: 4.5rem;
+        height: 35%;
+        top: 4.3rem;
     }
 
     html .work__title{
@@ -45,6 +46,12 @@
 
     html .work__item{
         white-space: nowrap;
+        font-size: var(--small-font-size);
+    }
+
+    html .work__button{
+        transform: scale(0.8) translateY(20%);
+        transform-origin: bottom;
     }
 }
 
