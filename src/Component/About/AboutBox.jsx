@@ -7,8 +7,6 @@ const AboutBox = () => {
     const [commitsCount , setCommitsCount] = useState('-');
     const [followersCount , setFollowersCount] = useState('-');
 
-    console.log(accessToken);
-    console.log(username);
 
     fetch(`https://api.github.com/users/${username}`, {
     headers: {
@@ -103,6 +101,7 @@ var yearsDiff = currentDate.getFullYear() - targetDate.getFullYear();
 var monthsDiff = (yearsDiff * 12 + currentDate.getMonth() - targetDate.getMonth());
 
   return (
+    <>
     <div className="about__boxes grid">
         <div className="about__box">
             <i className='about__icon icon-drawer'></i>
@@ -133,6 +132,7 @@ var monthsDiff = (yearsDiff * 12 + currentDate.getMonth() - targetDate.getMonth(
             </div>
         </div>
     </div>
+    </>
   )
 }
 

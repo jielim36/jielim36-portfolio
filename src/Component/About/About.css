@@ -13,6 +13,16 @@
     column-gap: 1.875rem;
 }
 
+@media screen and (max-width: 767px){
+    html .about__data{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    html .about__skills{
+        margin-top: 1.5rem;
+    }
+}
+
 .about__data {
     padding: 1.875rem;
     background-color: var(--container-color);

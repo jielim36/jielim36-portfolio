@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+    html .aside{
+        display: none;
+    }
+}
+
 .nav__logo img{
     scale: 1.5;
 }

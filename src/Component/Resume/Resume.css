@@ -1,3 +1,14 @@
+@media screen and (max-width:767px){
+    html .resume__container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    html .timeline{
+        margin-bottom: 1.5rem;
+        max-width: 480px;
+    }
+}
+
 .resume__container{
     position: relative;
     grid-template-columns: repeat(2,1fr);
@@ -51,4 +62,16 @@
 .timeline__title{
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;
+}
+
+.githubState{
+    width: 480px;
+    border-radius: var(--border-radius);
+    border: 10px solid #fff;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.githubState img{
+    transform: scale(1.1) translateX(13px);
 }

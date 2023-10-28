@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px){
+    html .main{
+        margin-left: 20px;
+    }
+}
+
 .main {
     margin-left: 110px;
 }

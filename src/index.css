@@ -46,6 +46,16 @@
 
 html{
   scroll-behavior: smooth;
+  padding-bottom: 10rem;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
 body,button,input,textarea {
