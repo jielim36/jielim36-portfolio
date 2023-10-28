@@ -12,7 +12,7 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              My name is Lim Yee Jie, I am a Software Engineer from Malaysia! I graduate in September 2024 have solid experience in back-end development, 
+              I am a software engineer from Malaysia, with a solid foundation in backend development and fundamental skills in frontend development. I have a great passion for working on development projects.            
             </p>
             <a href="/static/LimYeeJie_Resume.pdf" download="LimYeeJie_Resume.pdf" className="btn">Download Resume</a>
           </div>
@@ -20,7 +20,7 @@ const About = () => {
             <div className="skills__data">
               <div className="skills__titles">
                 <h3 className="skills__name">Back-end Development</h3>
-                <span className="skills__number">80%</span>
+                <span className="skills__number">75%</span>
               </div>
               <div className="skills__bar">
                 <span className="skills__percentage backend"></span>
@@ -37,7 +37,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="skills__data">
+            {/* <div className="skills__data">
               <div className="skills__titles">
                 <h3 className="skills__name">CI/CD</h3>
                 <span className="skills__number">55%</span>
@@ -45,7 +45,7 @@ const About = () => {
               <div className="skills__bar">
                 <span className="skills__percentage cicd"></span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
