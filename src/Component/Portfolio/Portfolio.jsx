@@ -42,12 +42,6 @@ const Portfolio = () => {
         >
           Assignments
         </span>
-        <span
-          className={`work__item ${activeFilter === "Exercise" ? 'active' : ''}`}
-          onClick={() => filterItem("Exercise")}
-        >
-          Exercises
-        </span>
       </div>
 
       <div className="work__container grid">

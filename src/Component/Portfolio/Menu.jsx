@@ -3,6 +3,7 @@ import MyBlog from '../../Assets/MyBlog.png';
 import HotelBookingSystemAndroid from '../../Assets/HotelBookingSystemAndroid.jpg';
 import TanksBattle from '../../Assets/TanksBattle.png';
 import ChatingSystem from '../../Assets/ChatingSystem.png';
+import SystemDatabaseDesign from '../../Assets/School_Management_System_Database_Design.png';
 
 const Menu = [
     {
@@ -43,7 +44,7 @@ const Menu = [
         id:3,
         title: "Tanks Battle",
         image: TanksBattle,
-        category: "Exercise",
+        category: "Personal Project",
         desc: (
             <div>
                 <ul>
@@ -58,7 +59,7 @@ const Menu = [
         id:4,
         title: "Chat System",
         image: ChatingSystem,
-        category: "Exercise",
+        category: "Personal Project",
         desc: (
             <div>
                 <ul>
@@ -69,6 +70,22 @@ const Menu = [
             </div>
         ),
         githubLink: "https://github.com/jielim36/Java_note/tree/master/Project_Folder/SocialSoftware",
+    },
+    {
+        id:5,
+        title: "System Database Design",
+        image: SystemDatabaseDesign,
+        category: "Assignment",
+        desc: (
+            <div>
+                <ul>
+                    <li>More than 30 tables.</li>
+                    <li>Drawing ER-Diagrams, Data Flow, and Chen-notation ER-Diagrams.</li>
+                    <li>There are SQL statements such as DDL, DML, and JOIN for multi-table queries.</li>
+                </ul>
+            </div>
+        ),
+        githubLink: "https://github.com/jielim36/School-Management-System_Database-Assignment",
     },
 ];
 
