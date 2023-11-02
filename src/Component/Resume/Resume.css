@@ -75,7 +75,7 @@
     margin: 0.5rem 0;
 }
 
-.githubState{
+.cardState{
     width: 480px;
     border-radius: var(--border-radius);
     border: 10px solid #fff;
@@ -83,6 +83,10 @@
     box-shadow: var(--shadow);
 }
 
-.githubState img{
+.cardState img{
     transform: scale(1.1) translateX(13px);
+}
+
+.cardState.leetcodeState img {
+    transform: scale(1.02);
 }
