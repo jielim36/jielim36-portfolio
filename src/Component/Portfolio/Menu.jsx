@@ -32,7 +32,7 @@ const Menu = [
             <div>
                 <ul>
                     <li>Using Android Studio Build a application</li>
-                    <li>Learn a lot of teamwork in this assignment</li>
+                    <li>We utilized Git and GitHub for project management, enabling collaborative development, version control, and seamless integration of team contributions</li>
                     <li>More than 40 pages</li>
                     <li>Using SQLite Database and more than 30 tables.</li>
                 </ul>
