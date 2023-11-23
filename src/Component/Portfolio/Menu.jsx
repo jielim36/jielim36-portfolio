@@ -4,6 +4,8 @@ import HotelBookingSystemAndroid from '../../Assets/HotelBookingSystemAndroid.jp
 import TanksBattle from '../../Assets/TanksBattle.png';
 import ChatingSystem from '../../Assets/ChatingSystem.png';
 import SystemDatabaseDesign from '../../Assets/School_Management_System_Database_Design.png';
+import OfficeManagementSystem from '../../Assets/OfficeManagementSystem.png';
+
 
 const Menu = [
     {
@@ -86,6 +88,24 @@ const Menu = [
             </div>
         ),
         githubLink: "https://github.com/jielim36/School-Management-System_Database-Assignment",
+    },
+    {
+        id:6,
+        title: "Office Management System",
+        image: OfficeManagementSystem,
+        category: "Personal Project",
+        desc: (
+            <div>
+                <ul>
+                    <li>Based on React.js and Spring Boot.</li>
+                    <li>User authentication and permission management.</li>
+                    <li>Provides an administrator interface and an employee interface.</li>
+                    <li>Admin Side: permission management, approval management, menu management.</li>
+                    <li>Employee side: office approval, user auth/login, and send message.</li>
+                </ul>
+            </div>
+        ),
+        githubLink: "https://github.com/jielim36/jielim-office-backend",
     },
 ];
 
